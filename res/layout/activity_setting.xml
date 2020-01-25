@@ -1,0 +1,225 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.kfacheckin.SettingActivity" >
+
+<TableLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="0,1,2"   
+    android:focusable="true" 
+    android:focusableInTouchMode="true"
+    >
+	<TableRow>
+	
+	    <TextView
+	        android:id="@+id/teamAddTitle"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_span="3"
+	        android:background="#02C874"
+	        android:gravity="center"
+	        android:text="新增團隊"        
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+    </TableRow>
+    <TableRow>
+        <TextView
+	        android:id="@+id/blank"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:text="" />
+        <EditText
+	        android:id="@+id/teamAddeditText"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:hint="輸入團隊名稱"
+	        android:ems="10" >
+	        
+	    </EditText>
+
+	    <Button
+	        android:id="@+id/teamAddbutton"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/button_blue"
+	        android:layout_marginBottom="3dp"
+			android:layout_marginLeft ="10dp"
+			android:layout_marginRight ="10dp"
+			android:layout_marginTop ="3dp"
+	        android:text="新增" />
+    </TableRow>
+    <TableRow>
+        <TextView
+	        android:id="@+id/blank1"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:text="" />
+        <TextView
+	        android:id="@+id/blank2"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:text="" />
+        <Button
+	        android:id="@+id/teamRemovebutton"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/button_blue"
+	       	android:layout_marginBottom="3dp"
+			android:layout_marginLeft ="10dp"
+			android:layout_marginRight ="10dp"
+			android:layout_marginTop ="3dp"
+	        android:text="移除" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/peopleAddTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_span="3"
+            android:background="#02C874"
+            android:gravity="center"
+            android:text="新增人員"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </TableRow>
+    <TableRow>
+	    <TextView
+	        android:id="@+id/teamSpinnerTitle"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:text="團隊"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <Spinner
+	        android:id="@+id/teamspinner"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" />
+	</TableRow>
+	<TableRow>
+        <TextView
+	        android:id="@+id/peopleNameAddTitle"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:text="名子"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <EditText
+	        android:id="@+id/peopleNameAddeditText"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:hint="輸入名稱"
+	        android:ems="10" >
+	    </EditText>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+	        android:id="@+id/peopleNicknameAddTitle"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:text="綽號"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <EditText
+	        android:id="@+id/peopleNicknameAddeditText"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:hint="輸入綽號"
+	        android:ems="10" >
+	    </EditText>
+
+		<Button
+	        android:id="@+id/peopleAddbutton"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/button_blue"
+	        android:layout_marginBottom="3dp"
+			android:layout_marginLeft ="10dp"
+			android:layout_marginRight ="10dp"
+			android:layout_marginTop ="3dp"
+	        android:text="新增" />
+    </TableRow>
+    
+    <TableRow>
+        <TextView
+            android:id="@+id/peopleCardnumAddTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_span="3"
+            android:background="#02C874"
+            android:gravity="center"
+            android:text="新增修改卡號"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </TableRow>
+    <TableRow>
+        <TextView
+	        android:id="@+id/cardnumAddTeamTitle"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:text="團隊"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <Spinner
+	        android:id="@+id/cardnumAddTeamspinner"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" />
+    </TableRow>
+    
+    <TableRow>
+        <TextView
+	        android:id="@+id/cardnumAddNicknameTitle"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:text="人員"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <Spinner
+	        android:id="@+id/cardnumAddNicknamespinner"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" />
+    </TableRow>
+    
+    <TableRow>     
+        <TextView
+	        android:id="@+id/cardnumAddTitle"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:text="卡號"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <EditText
+	        android:id="@+id/cardnumAddeditText"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:hint="輸入卡號"
+	        android:maxLength="10"
+	        android:inputType="number"
+	        android:ems="10" >
+	    </EditText>
+
+	    <Button
+	        android:id="@+id/cardnumAddbutton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/button_blue"
+	        android:layout_marginBottom="3dp"
+			android:layout_marginLeft ="10dp"
+			android:layout_marginRight ="10dp"
+			android:layout_marginTop ="3dp"
+	        android:text="新增" />
+	    
+    </TableRow>
+</TableLayout>
+</ScrollView>

@@ -1,0 +1,122 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0,1"
+    tools:context="com.example.kfacheckin.Index$PlaceholderFragment"
+    android:focusable="true" 
+    android:focusableInTouchMode="true" >
+    
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text=""/>
+    <TableRow>
+        <TextView
+	        android:id="@+id/teamAddTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="50dp"
+	        android:layout_marginBottom="10dp"
+			android:layout_marginLeft ="10dp"
+			android:layout_marginRight ="10dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_span="2"
+	        android:background="#02C874"
+	        android:gravity="center"
+	        android:text="簽到或簽退"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	</TableRow>
+	<TableRow>
+	    <Spinner
+	        android:id="@+id/checkinOroutSpinner"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_span="1" />
+
+	    
+	    <TextView
+	        android:id="@+id/peopleNum"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_span="1"
+	        android:gravity="center"
+	        android:text=""
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	</TableRow>
+	<TableRow>
+	    <!-- <EditText
+	        android:id="@+id/classeditText"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="輸入課名"
+	        android:inputType="text" >
+	        <requestFocus />
+	    </EditText> -->
+
+		<AutoCompleteTextView
+		    android:id="@+id/autoCompleteTextView"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_span="1"
+		    android:ems="4"
+		    android:singleLine="true"
+		    android:hint="輸入課名"/>	    
+	    <EditText
+	        android:id="@+id/dateeditText"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_span="1"
+	        android:ems="4"
+	        android:inputType="text" >
+	        <requestFocus />
+	    </EditText>
+	    
+    </TableRow>
+    <TableRow>
+	    <EditText
+	        android:id="@+id/idclasseditText"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:maxLength="10"
+	        android:layout_span="2"
+	        android:inputType="number"
+	        android:ems="4"
+	        android:hint="輸入id"
+	         >
+    	</EditText>
+    </TableRow>
+    <TableRow>
+		<Button
+	        android:id="@+id/selectPeopleButton"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_span="1"
+	        android:layout_marginBottom="20dp"
+			android:layout_marginLeft ="20dp"
+			android:layout_marginRight ="20dp"
+			android:layout_marginTop ="20dp"
+	        android:background="@drawable/button_blue"
+	        android:text="選擇需到人員" />
+		<Button
+	        android:id="@+id/sendEmailButton"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_span="1"
+	        android:layout_marginBottom="20dp"
+			android:layout_marginLeft ="20dp"
+			android:layout_marginRight ="20dp"
+			android:layout_marginTop ="20dp"
+	        android:background="@drawable/button_blue"
+	        android:text="寄出簽到紀錄" />
+    </TableRow>
+    <TableRow>
+	    <ListView android:id="@+id/listViewclass" 
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:layout_span="2"/>
+    </TableRow>
+
+
+</TableLayout>

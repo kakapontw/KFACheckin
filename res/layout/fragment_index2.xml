@@ -1,0 +1,44 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="0,1,2"
+    tools:context="com.example.kfacheckin.Index$PlaceholderFragment"
+    android:focusable="true" 
+    android:focusableInTouchMode="true" >
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+	<TableRow>
+	    <TextView 
+	      android:id="@+id/title"
+	      android:layout_width="fill_parent"
+		  android:layout_height="wrap_content" 
+		  android:padding="10dp"
+		  android:gravity="center"
+		  android:layout_span="3"
+		  android:text="查詢人員" 
+		  android:textSize="20sp" />
+	</TableRow> 
+	<TableRow>	    
+		 <EditText 
+		    android:id="@+id/myFilter" 
+		    android:layout_width="match_parent"
+		  	android:layout_height="wrap_content" 
+		  	android:ems="10"
+			android:layout_marginLeft ="40dp"
+			android:layout_marginRight ="40dp"
+		  	android:layout_span="3"
+		  	android:hint="輸入綽號">
+		  <requestFocus />
+		 </EditText>
+	</TableRow>
+	<TableRow>
+		 <ListView android:id="@+id/listViewtotal" 
+		  android:layout_width="fill_parent"
+		  android:layout_height="fill_parent"
+		  android:layout_span="3" />
+	</TableRow>
+</TableLayout>
